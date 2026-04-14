@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 60px;
+  background-color: rgb(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 9999;
+}
+.logo {
+  position: relative;
+  width: 125px;
+  height: 30px;
+  background: url(../images/logo_white.png) no-repeat center;
+  background-size: cover;
+}
+/* 메뉴 */
+.gnb {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.gnb > li > a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+.gnb > li > a > span {
+  position: relative;
+}
+.gnb > li > a > span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.gnb > li > a:hover > span::after {
+  opacity: 1;
+}
+
+/* 모바일 메뉴 버튼  */
+.mbt {
+  display: none;
+}
+
+/* gnb 모바일메뉴 */
+.nav-mb-gnb {
+  display: none;
+}

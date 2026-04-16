@@ -52,7 +52,6 @@
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
-  
 }
 .gnb > li > a > span {
   position: relative;
@@ -78,6 +77,29 @@
 }
 
 /* gnb 모바일메뉴 */
-.nav-mb-gnb {
+/* .nav-mb-gnb {
   display: none;
+} */
+
+.nav-mb{
+  position: absolute;
+  top: 70px;
+  left: 100%;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav-mb-gnb a{
+  display: flex;
+  align-items: center;
+  padding: 15px 70px 15px 40px;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+}
+.nav-mb.active{
+opacity: 1;
+left: 0;
 }

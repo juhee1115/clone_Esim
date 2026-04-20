@@ -86,7 +86,35 @@
   .business a p {
     font-size: 16px;
   }
+  .service-wrap {
+    grid-template-columns: 1fr;
+  }
+  .service-wrap .inner {
+    width: 70%;
+    max-width: 660px;
+  }
+  .service-box-1 {
+    width: 100%;
+  }
 }
+
+@media (max-width: 640px) {
+  .service-box-1,
+  .service-box-2,
+  .service-box-3 {
+    aspect-ratio: 4/3;
+  }
+  .service-bg-1{
+    background-position: bottom;
+  }
+  .footer-br{
+    display: block;
+  }
+  .footer-bar{
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .inner {
     width: 90% !important;
@@ -108,5 +136,16 @@
   }
   .sw-business a {
     padding: 25px 20px;
+  }
+  .business-modal {
+    height: 300px;
+  }
+  
+}
+@media (max-width: 480px){
+    .service-box-1,
+  .service-box-2,
+  .service-box-3 {
+    aspect-ratio: 4/3;
   }
 }
